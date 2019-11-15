@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!-- Задача. Упорядкувати елементи масиву: -->
+
+<body>
+    <script>
+
+        // const arr = [34, 56, -23, -67, 64, 42, 27]
+        // document.write(`${arr} <br>`)
+        // arr.sort((a,b)=>b-a)
+        // document.write(arr)
+
+
+
+        // const arr = [34, 56, -23, 67, 24, -42, 27]
+        // document.write(`${arr} <br>`)
+
+        // arr.sort((a, b) => Math.abs(a) - Math.abs(b))
+        // document.write(arr)
+
+        // const arr = [34, 56, -23, -67, 64, 42, 27]
+        // document.write(`${arr} <br>`)
+
+        // arr.sort((v, r) => v * v - r * r)
+        // document.write(`${arr} <br>`)
+
+
+
+        // const arr = [34, 56, -23, -61, 64, 42, 27]
+        // document.write(`${arr} <br>`)
+        // arr.sort((x, y) => x % 10 - y % 10)
+        // document.write(`${arr} <br>`)
+
+        // Задача. Кожен від’ємний елемент масиву піднести до квадрату
+
+        const arr = [34, 56, -23, -61, 64, 42, 27]
+        document.write(`${arr} <br>`)
+
+        function toSquare(elCopy, i, arr) {
+            if (arr[i] > 0) {
+                return arr[i] * arr[i]
+            }
+        }
+
+        document.write(`${arr.forEach(toSquare)}`)
+
+
+    </script>
+</body>
+
+</html>
