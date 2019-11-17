@@ -10,20 +10,20 @@
 <!-- Задача 7. Розробити функцію, яка би для довільної кількості переданих 
     символів визначала, кількість букв «а». -->
 
+<!-- Не працює -->
+
 <body>
     <script>
-        const arr = ['s','v','a','g','a']
-        document.write(arr)
-        document.write('<br>')
+        const arr = ['s', 'v', 'a', 'g', 'a']
 
-        var aSum = arr.reduce((aSum, elCopy) => {
+        const sumA = arr.reduce((aSum, elCopy) => {
             if (elCopy == 'a')
                 return aSum + 1
             else
-                aSum
+                return aSum
         }, 0)
 
-        document.write(aSum)
+        document.write(sumA)
 
     </script>
 </body>
