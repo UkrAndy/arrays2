@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!-- Задача. Дано масив літер. Сформувати рядок, який складається тільки з голосних літер. -->
+
+<body>
+    <script>
+
+        const arr = 'олджваолджфіваолдууджлдочсмбььтівшщукщшзц'.split('')
+        document.write(arr)
+        document.write('<br>')
+        
+        const arrHolosni = 'аеиіоуяюєї'.split('')
+
+        newArr = arr.filter((elCopy, i, arr) => {
+            if (arrHolosni.includes(elCopy))
+                return elCopy
+        })
+        document.write(newArr)
+
+
+    </script>
+</body>
+
+</html>

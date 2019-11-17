@@ -40,16 +40,103 @@
 
         // Задача. Кожен від’ємний елемент масиву піднести до квадрату
 
-        const arr = [34, 56, -23, -61, 64, 42, 27]
-        document.write(`${arr} <br>`)
 
-        function toSquare(elCopy, i, arr) {
-            if (arr[i] > 0) {
-                return arr[i] * arr[i]
-            }
-        }
+        // const arr = [34, 56, -23, 67, -24, 42, -27]
+        // document.write(arr)
+        // document.write('<hr>')
 
-        document.write(`${arr.forEach(toSquare)}`)
+        // function toSquare(elCopy, i, arr) {
+        //     if (elCopy < 0) {
+        //       arr[i]=elCopy*elCopy
+        //     }
+        // }
+        // arr.forEach(toSquare)
+        // document.write(arr)
+
+        // const arr = [34, 56, -23, 67, -24, 42, -7]
+        // document.write(arr)
+        // document.write('<hr>')
+        // arr.forEach((elCopy, i, arr) => {
+        //     if (elCopy < 0)
+        //         arr[i] = elCopy * elCopy
+        // })
+
+        // document.write(arr)
+
+        //Задача. Дано масив цін. Сформувати масив цін, які більші за 100.
+
+
+        // const arr = [34, 101, -23, 67, -24, 400, 700]
+        // document.write(arr)
+        // document.write('<hr>')
+        // newArr = arr.filter(elCopy => elCopy > 100)
+        // document.write(newArr)
+
+
+
+
+
+        //  Вибрати елементи, які менші за свій індекс
+        // const arr = [4, 5, 1, 700, 2, 200, 7]
+
+        // document.write(arr)
+        // document.write('<hr>')
+        // newArr = arr.filter((elCopy, i, arr) => elCopy < i)
+        // document.write(newArr)
+
+
+        //Задача. Дано масив років народження працівників.
+        // Вивести тих, які народилися між 1980 і 2003 роками.
+
+        // const arr = [1976, 1976, 1987, 1986, 2000, 2001, 2009]
+
+        // document.write(arr)
+        // document.write('<hr>')
+        // newArr = arr.filter((elCopi, i, arr) => elCopi >= 1980 && elCopi <= 2003)
+        // document.write(newArr)
+
+
+        // Задача. Дано масив імен працівників.
+        //  Сформувати новий масив, який складається з перших літер імен.
+
+
+        // const arr = ["Ivan", "Petro", "Sidor", "Ivan", "Petro", "Sidor"]
+
+        // document.write(arr)
+        // document.write('<hr>')
+        // newArr = arr.map((elCopy, i, arr) => elCopy[0])
+        // document.write(newArr)
+
+        // Задача. Дано масив чисел. Сформувати новий масив,
+        //  у якому усі числа збільшено на 20.
+
+        // const arr = [4, 5, 1, 700, 2, 200, 7]
+
+        // document.write(arr)
+        // document.write('<hr>')
+        // arr.forEach(elCopy =>  elCopy * 20 )
+        // document.write(arr)
+
+
+
+        // Задача. Дано масив показників термометра протягом місяця. 
+        // З’ясувати, чи є серед них дні, коли температура була меншою за 5 градусів.
+
+        const arr = [2, 4, 12, 4, -8, 9]
+
+        document.write(arr)
+        document.write('<hr>')
+
+
+        newArr = arr.map((elCopy, i, arr) => {
+            elCopy < 5 ?
+                i
+        }) 
+        document.write(newArr)
+
+
+
+
 
 
     </script>
