@@ -19,8 +19,7 @@
         const arrHolosni = 'аеиіоуяюєї'.split('')
 
         let newArr = arr.filter((elCopy, i, arr) => {
-            if (arrHolosni.includes(elCopy))
-                return elCopy
+            return arrHolosni.includes(elCopy) Повертати треба true/false
         })
         document.write(newArr)
 
