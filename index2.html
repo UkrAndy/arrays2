@@ -18,7 +18,7 @@
         
         const arrHolosni = 'аеиіоуяюєї'.split('')
 
-        newArr = arr.filter((elCopy, i, arr) => {
+        let newArr = arr.filter((elCopy, i, arr) => {
             if (arrHolosni.includes(elCopy))
                 return elCopy
         })
